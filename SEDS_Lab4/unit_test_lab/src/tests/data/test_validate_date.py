@@ -4,11 +4,10 @@ import os
 def is_row_valid(row):
     if row.isnull().any():
         return False
-    
     return True
 
 def load_data():
-    file_path = '/home/mina/esi/tp/science de donnees/SEDS_Lab4/unit_test_lab/data/raw/housePrice.csv'
+    file_path = '/home/mina/esi/tp/SEDS_Labs/SEDS_Lab4/unit_test_lab/data/raw/housePrice.csv'
     return pd.read_csv(file_path)
     
      
